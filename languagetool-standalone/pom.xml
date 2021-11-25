@@ -1,13 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    
+
     <parent>
         <groupId>org.languagetool</groupId>
         <artifactId>languagetool-parent</artifactId>
         <version>5.6-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    
+
     <artifactId>languagetool-standalone</artifactId>
     <url>https://www.languagetool.org</url>
     <name>LanguageTool stand-alone GUI</name>
@@ -19,7 +20,7 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
-    
+
     <packaging>jar</packaging>
 
     <build>
@@ -54,7 +55,9 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathLayoutType>custom</classpathLayoutType>
-                            <customClasspathLayout>libs/$${artifact.artifactId}$${dashClassifier?}.$${artifact.extension}</customClasspathLayout>
+                            <customClasspathLayout>
+                                libs/$${artifact.artifactId}$${dashClassifier?}.$${artifact.extension}
+                            </customClasspathLayout>
                         </manifest>
                         <manifestEntries>
                             <!-- as we later unzip the language JARs (see zip.xml), we need to add the top directory to the classpath: -->
