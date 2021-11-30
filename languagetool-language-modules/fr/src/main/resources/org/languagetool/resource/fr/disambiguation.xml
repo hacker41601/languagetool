@@ -952,6 +952,7 @@ RB => Règles Brutes
         </rule>
     </rulegroup>
     <!-- TODO: tu ne l'as; l'avoir rencontrée -->
+	<!--Adding in rules for avoir-->
     <!-- This is to catch frequent errors such as "J'ai manger" which would not
          be caught without disambiguation as "manger" can also be a noun -->
     <rulegroup name="Etre/Avoir + verb" id="ETRE_AVOIR_V_ER">
